@@ -11,7 +11,7 @@ See R file for the full code including comments.
 
 ### RStudio Results
 Below two tables are included. The first table shows the accuracies achieved on the test data with a 50/50 split between test and training. The second tables shows the required computational time for the same computations.
-
+||||Accuracy|||
 | Observations |     K = 1 |     K = 3 |     K = 5 |    K = 10 |    K = 20 |
 |-----------|----------:|----------:|----------:|----------:|----------:|
 |      1000 |      0.82 |     0.796 |     0.772 |     0.762 |     0.726 |
