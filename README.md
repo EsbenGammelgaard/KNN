@@ -27,8 +27,6 @@ The goal is to use the KNN algorithm to classify the digits in the 10 different 
 | 2000         |  5.25 |  5.33 |  5.73 |   5.91 |   5.70 |
 | 3000         | 11.12 |  9.81 | 10.18 |   9.96 |   9.93 |
 | 4000         | 25.85 | 24.51 | 26.23 |  25.62 |  23.45 |
-### RStudio Results Conclusions
-From the table above the trend seems to be that the larger amount of observations used the higher the accuracy can be achieved. Furthermore it can be seen that for all the included amounts of observations the best accuracy is achieved by using smaller K-values in the 1 to 3 area.
 
 ## Python Results
 #### Accuracy
@@ -45,3 +43,7 @@ From the table above the trend seems to be that the larger amount of observation
 | 2000         |  1.78 |  1.77 |  1.80 |   1.76 |   1.76 |
 | 3000         |  3.48 |  3.43 |  3.43 |   3.43 |   3.66 |
 | 4000         |  6.85 |  6.75 |  6.94 |   6.74 |   6.84 |
+
+##  Results Conclusions
+From the table above the trend seems to be that the larger amount of observations used the higher the accuracy can be achieved. Furthermore it can be seen that for all the included amounts of observations the best accuracy is achieved by using smaller K-values in the 1 to 3 area.
+
