@@ -23,11 +23,10 @@ See R file for the full code including comments.
 
 | Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
 |--------------|-------|-------|-------|--------|--------|
-| 1000         |       |       |       |        |        |
-| 2000         |       |       |       |        |        |
-| 3000         |       |       |       |        |        |
-| 4000         |       |       |       |        |        |
-
+| 1000         |  0.47 |  0.47 |  0.52 |   0.85 |   0.61 |
+| 2000         |  5.25 |  5.33 |  5.73 |   5.91 |   5.70 |
+| 3000         | 11.12 |  9.81 | 10.18 |   9.96 |   9.93 |
+| 4000         | 25.85 | 24.51 | 26.23 |  25.62 |  23.45 |
 ### RStudio Results Conclusions
 From the table above the trend seems to be that the larger amount of observations used the higher the accuracy can be achieved. Furthermore it can be seen that for all the included amounts of observations the best accuracy is achieved by using smaller K-values in the 1 to 3 area.
 
