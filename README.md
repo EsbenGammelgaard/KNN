@@ -6,10 +6,9 @@ The database used in all three examples is the MNIST database of handwritten dig
 ### CSV version
 In these examples the more conviniet .CSV file created by Joseph Redmon is used. It can be downloadet from: https://pjreddie.com/media/files/mnist_train.csv.
 
-## RStudio
-See R file for the full code including comments.
 
-### RStudio Results
+
+## RStudio Results
 #### Accuracy
 
 | Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
@@ -30,9 +29,7 @@ See R file for the full code including comments.
 ### RStudio Results Conclusions
 From the table above the trend seems to be that the larger amount of observations used the higher the accuracy can be achieved. Furthermore it can be seen that for all the included amounts of observations the best accuracy is achieved by using smaller K-values in the 1 to 3 area.
 
-## Python
-
-### Python Results
+## Python Results
 #### Accuracy
 | Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
 |--------------|-------|-------|-------|--------|--------|
