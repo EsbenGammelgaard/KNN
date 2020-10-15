@@ -44,6 +44,12 @@ The goal is to use the KNN algorithm to classify the digits in the 10 different 
 | 3000         |  3.48 |  3.43 |  3.43 |   3.43 |   3.66 |
 | 4000         |  6.85 |  6.75 |  6.94 |   6.74 |   6.84 |
 
+## SAS Results
+#### Accuracy
+Missing
+#### Run Time [s]
+Missing
+
 ##  Results Conclusions
 From the table above the trend seems to be that the larger amount of observations used the higher the accuracy can be achieved. Furthermore it can be seen that for all the included amounts of observations the best accuracy is achieved by using smaller K-values in the 1 to 3 area.
 
