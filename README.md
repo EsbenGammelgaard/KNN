@@ -6,7 +6,8 @@ The database used in all three examples is the MNIST database of handwritten dig
 ### CSV version
 In these examples the more conviniet .CSV file created by Joseph Redmon is used. It can be downloadet from: https://pjreddie.com/media/files/mnist_train.csv.
 
-
+## Experiment setup
+Missing
 
 ## RStudio Results
 #### Accuracy
