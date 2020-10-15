@@ -22,3 +22,14 @@ Computational time Table missing
 
 #### RStudio Results Conclusions
 From the table above the trend seems to be that the larger amount of observations used the higher the accuracy can be achieved. Furthermore it can be seen that for all the included amounts of observations the best accuracy is achieved by using smaller K-values in the 1 to 3 area.
+
+## Python
+
+### Python Results
+
+| Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
+|-----------|------:|------:|------:|-------:|-------:|
+|      1000 | 0.882 | 0.913 | 0.891 |  0.885 |  0.896 |
+|      2000 | 0.886 | 0.886 | 0.897 |  0.882 |  0.898 |
+|      3000 | 0.891 | 0.885 | 0.879 |  0.895 |  0.868 |
+|      4000 | 0.897 |   0.9 | 0.891 |  0.894 |  0.866 |
