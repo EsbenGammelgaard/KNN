@@ -11,12 +11,12 @@ See R file for the full code including comments.
 
 ### RStudio Results
 Below two tables are included. The first table shows the accuracies achieved on the test data with a 50/50 split between test and training. The second tables shows the required computational time for the same computations.
-| Observations |     K = 1 |     K = 3 |     K = 5 |    K = 10 |    K = 20 |
-|-----------|----------:|----------:|----------:|----------:|----------:|
-|      1000 |      0.82 |     0.796 |     0.772 |     0.762 |     0.726 |
-|      2000 |     0.882 |     0.861 |     0.855 |      0.85 |     0.819 |
-|      3000 | 0.9033333 | 0.9073333 | 0.8953333 | 0.8846667 | 0.8633333 |
-|      4000 |     0.915 |    0.9105 |     0.911 |     0.892 |     0.872 |
+| Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
+|--------------|-------|-------|-------|--------|--------|
+| 1000         |  0.82 |  0.80 |  0.77 |   0.76 |   0.73 |
+| 2000         |  0.88 |  0.86 |  0.86 |   0.85 |   0.82 |
+| 3000         |  0.90 |  0.91 |  0.90 |   0.88 |   0.86 |
+| 4000         |  0.92 |  0.91 |  0.91 |   0.89 |   0.87 |
 
 Computational time Table missing
 
@@ -27,9 +27,9 @@ From the table above the trend seems to be that the larger amount of observation
 
 ### Python Results
 
-| Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
+| Data used | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
 |-----------|------:|------:|------:|-------:|-------:|
-|      1000 | 0.882 | 0.913 | 0.891 |  0.885 |  0.896 |
-|      2000 | 0.886 | 0.886 | 0.897 |  0.882 |  0.898 |
-|      3000 | 0.891 | 0.885 | 0.879 |  0.895 |  0.868 |
-|      4000 | 0.897 |   0.9 | 0.891 |  0.894 |  0.866 |
+|      1000 |  0.88 |  0.91 |  0.89 |   0.89 |   0.90 |
+|      2000 |  0.89 |  0.89 |  0.90 |   0.88 |   0.90 |
+|      3000 |  0.89 |  0.89 |  0.88 |   0.90 |   0.87 |
+|      4000 |  0.90 |  0.90 |  0.89 |   0.89 |   0.87 |
