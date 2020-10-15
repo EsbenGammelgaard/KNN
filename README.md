@@ -27,7 +27,7 @@ From the table above the trend seems to be that the larger amount of observation
 
 ### Python Results
 
-| Data used | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
+| Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
 |-----------|------:|------:|------:|-------:|-------:|
 |      1000 |  0.88 |  0.91 |  0.89 |   0.89 |   0.90 |
 |      2000 |  0.89 |  0.89 |  0.90 |   0.88 |   0.90 |
