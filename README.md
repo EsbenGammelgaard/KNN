@@ -7,7 +7,7 @@ The database used in all three examples is the MNIST database of handwritten dig
 In these examples the more conviniet .CSV file created by Joseph Redmon is used. It can be downloadet from: https://pjreddie.com/media/files/mnist_train.csv.
 
 ## Experiment setup
-Missing
+The goal is to use the KNN algorithm to classify the digits in the 10 different classes ranging from 0 to 9. The algorithm is tested with different amount of observations included in the training and test of the algorithm. For all excecutions the split between training and test is 50/50. Furthermore different K-values ranging from 1 to 20 are evaluated for the different executions.
 
 ## RStudio Results
 #### Accuracy
