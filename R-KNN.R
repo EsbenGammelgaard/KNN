@@ -7,52 +7,37 @@ mnist_raw <-
 
 # Required inputs
 size <- 2000 # Total observations included
-split <- 50  # Split size where 90 means that it is 90/10 
+split <- 50  # Split size where 90 means that it is 90/10
 k <- 1
-size_matrix <- c(1000, 2000, 3000, 4000)
-k_matrix <- c(1, 3, 5, 10, 20)
 
-# Creating results Matrix
-results <- matrix(1:20, nrow = 5)
-results_time <- matrix(1:20, nrow = 5)
+start <- Sys.time()
 
-colnames(results) <- size_matrix
-rownames(results) <- k_matrix
-colnames(results_time) <- size_matrix
-rownames(results_time) <- k_matrix
+# Splitting between train and test data
+mnist_train <- mnist_raw[1:(size * split * 0.01),-1]
+mnist_test <- mnist_raw[(size * split * 0.01 + 1):size,-1]
 
-# Loops for multiples training and tests
-for (k in k_matrix){
-  for (size in size_matrix){
-    start <- Sys.time()
-    
-    # Splitting between train and test data
-    mnist_train <- mnist_raw[1:(size * split * 0.01), -1]
-    mnist_test <- mnist_raw[(size * split * 0.01 + 1):size, -1]
-    
-    # Splitting between train and test labels
-    mnist_train_labels <- factor(mnist_raw[1:(size * split * 0.01), 1])
-    mnist_test_labels <-
-      factor(mnist_raw[(size * split * 0.01 + 1):size, 1])
-    
-    # Training the algorithm
-    mnist_pred <-
-      knn(
-        train = mnist_train ,
-        test = mnist_test ,
-        cl = mnist_train_labels,
-        k = k
-      )
-    
-    # Confusion Matrix and calculation of overall accuracy
-    cf_half_ind  <- confusionMatrix(mnist_test_labels , mnist_pred)
-    cf_half_ind$table
-    acc_half_ind <-
-      sum(diag(cf_half_ind$table)) / sum(cf_half_ind$table)
-    
-    #logging results
-    
-    stop <- Sys.time()
-    results[toString(k),toString(size)] <- acc_half_ind
-    results_time[toString(k),toString(size)] <- stop - start
-}}
+# Splitting between train and test labels
+mnist_train_labels <-
+  factor(mnist_raw[1:(size * split * 0.01), 1])
+mnist_test_labels <-
+  factor(mnist_raw[(size * split * 0.01 + 1):size, 1])
+
+# Training the algorithm
+mnist_pred <-
+  knn(
+    train = mnist_train ,
+    test = mnist_test ,
+    cl = mnist_train_labels,
+    k = k
+  )
+
+# Confusion Matrix and calculation of overall accuracy
+cf_m  <- confusionMatrix(mnist_test_labels , mnist_pred)
+cf_table <- cf_m$table
+acc <- sum(diag(cf_table)) / sum(cf_table)
+
+#logging results
+
+stop <- Sys.time()
+time <- stop - start
+write.table(cf_table, "C:/Users/esbe1/Desktop/Portfolio/R-KNN-CF.txt", sep = ",")
