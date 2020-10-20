@@ -7,26 +7,22 @@ The database used in all three examples is the MNIST database of handwritten dig
 In these examples the more conviniet .CSV file created by Joseph Redmon is used. It can be downloadet from: https://pjreddie.com/media/files/mnist_train.csv.
 
 ## Experiment setup
-The goal is to use the KNN algorithm to classify the digits in the 10 different classes ranging from 0 to 9. The algorithm is tested with different amount of observations included in the training and test of the algorithm. For all excecutions the split between training and test is 50/50. Furthermore different K-values ranging from 1 to 20 are evaluated for the different executions.
+The goal is to use the KNN algorithm to classify the digits in the 10 different classes ranging from 0 to 9. The split between training and test is 50/50. Amount of observations included is 100 training and 1000 test, with the K-value of 1.
 
 ## RStudio Results
 #### Accuracy
-
-| Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
-|--------------|-------|-------|-------|--------|--------|
-| 1000         |  0.82 |  0.80 |  0.77 |   0.76 |   0.73 |
-| 2000         |  0.88 |  0.86 |  0.86 |   0.85 |   0.82 |
-| 3000         |  0.90 |  0.91 |  0.90 |   0.88 |   0.86 |
-| 4000         |  0.92 |  0.91 |  0.91 |   0.89 |   0.87 |
-
-#### Run Time [s]
-
-| Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
-|--------------|-------|-------|-------|--------|--------|
-| 1000         |  0.47 |  0.47 |  0.52 |   0.85 |   0.61 |
-| 2000         |  5.25 |  5.33 |  5.73 |   5.91 |   5.70 |
-| 3000         | 11.12 |  9.81 | 10.18 |   9.96 |   9.93 |
-| 4000         | 25.85 | 24.51 | 26.23 |  25.62 |  23.45 |
+| Prediction / Reference | 0  | 1   | 2  | 3  | 4  | 5  | 6   | 7   | 8  | 9  |
+|------------------------|----|-----|----|----|----|----|-----|-----|----|----|
+| 0                      | 89 | 1   | 0  | 0  | 0  | 0  | 2   | 0   | 0  | 1  |
+| 1                      | 0  | 103 | 0  | 0  | 0  | 0  | 0   | 1   | 0  | 0  |
+| 2                      | 0  | 4   | 86 | 0  | 1  | 0  | 0   | 5   | 3  | 0  |
+| 3                      | 1  | 1   | 4  | 76 | 0  | 11 | 0   | 1   | 2  | 2  |
+| 4                      | 0  | 6   | 1  | 0  | 81 | 1  | 2   | 1   | 1  | 16 |
+| 5                      | 1  | 0   | 0  | 6  | 0  | 76 | 3   | 0   | 1  | 2  |
+| 6                      | 1  | 0   | 0  | 0  | 1  | 1  | 103 | 0   | 0  | 0  |
+| 7                      | 0  | 1   | 0  | 0  | 0  | 2  | 0   | 101 | 0  | 3  |
+| 8                      | 2  | 1   | 0  | 1  | 1  | 3  | 3   | 0   | 70 | 4  |
+| 9                      | 1  | 1   | 0  | 1  | 5  | 0  | 0   | 5   | 0  | 97 |
 
 ## Python Results
 #### Accuracy
