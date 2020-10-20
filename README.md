@@ -10,7 +10,7 @@ In these examples the more conviniet .CSV file created by Joseph Redmon is used.
 The goal is to use the KNN algorithm to classify the digits in the 10 different classes ranging from 0 to 9. The split between training and test is 50/50. Amount of observations included is 100 training and 1000 test, with the K-value of 1.
 
 ## RStudio Results
-#### Accuracy
+#### Confusion Matrix
 | Prediction / Reference | 0  | 1   | 2  | 3  | 4  | 5  | 6   | 7   | 8  | 9  |
 |------------------------|----|-----|----|----|----|----|-----|-----|----|----|
 | 0                      | 89 | 1   | 0  | 0  | 0  | 0  | 2   | 0   | 0  | 1  |
@@ -23,6 +23,8 @@ The goal is to use the KNN algorithm to classify the digits in the 10 different 
 | 7                      | 0  | 1   | 0  | 0  | 0  | 2  | 0   | 101 | 0  | 3  |
 | 8                      | 2  | 1   | 0  | 1  | 1  | 3  | 3   | 0   | 70 | 4  |
 | 9                      | 1  | 1   | 0  | 1  | 5  | 0  | 0   | 5   | 0  | 97 |
+#### Accuracy 
+The accuracy aqired was .882
 #### Run Time
 The run time for the prediciton inlducing both training and testing was 5.5 seconds. 
 
