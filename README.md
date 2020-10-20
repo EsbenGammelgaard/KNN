@@ -24,7 +24,7 @@ The goal is to use the KNN algorithm to classify the digits in the 10 different 
 | 8                      | 2  | 1   | 0  | 1  | 1  | 3  | 3   | 0   | 70 | 4  |
 | 9                      | 1  | 1   | 0  | 1  | 5  | 0  | 0   | 5   | 0  | 97 |
 #### Accuracy 
-The accuracy aqired was .882
+The accuracy aqired was 0.88
 #### Run Time
 The run time for the prediciton inlducing both training and testing was 5.5 seconds. 
 
