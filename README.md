@@ -23,6 +23,8 @@ The goal is to use the KNN algorithm to classify the digits in the 10 different 
 | 7                      | 0  | 1   | 0  | 0  | 0  | 2  | 0   | 101 | 0  | 3  |
 | 8                      | 2  | 1   | 0  | 1  | 1  | 3  | 3   | 0   | 70 | 4  |
 | 9                      | 1  | 1   | 0  | 1  | 5  | 0  | 0   | 5   | 0  | 97 |
+#### Run Time
+The run time for the prediciton inlducing both training and testing was 5.5 seconds. 
 
 ## Python Results
 #### Accuracy
