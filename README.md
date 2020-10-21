@@ -1,4 +1,4 @@
-# Digit recongnition using KNN in RStudio, Python & SAS
+# Digit recongnition using KNN in RStudio
 
 ## Database
 The database used in all three examples is the MNIST database of handwritten digits. The database is created by: Yann LeCun, Courant Institute, NYU, Corinna Cortes, Google Labs, New York, and Christopher J.C. Burges, Microsoft Research, Redmond. The database is found at http://yann.lecun.com/exdb/mnist/.
@@ -6,10 +6,8 @@ The database used in all three examples is the MNIST database of handwritten dig
 #### CSV version
 In these examples the more conviniet .CSV file created by Joseph Redmon is used. It can be downloadet from: https://pjreddie.com/media/files/mnist_train.csv.
 
-## Experiment setup
+## Results from R-KNN
 The goal is to use the KNN algorithm to classify the digits in the 10 different classes ranging from 0 to 9. The split between training and test is 50/50. Amount of observations included is 1000 training and 1000 test, with the K-value of 1.
-
-## RStudio Results
 #### Confusion Matrix
 | Prediction / Reference | 0  | 1   | 2  | 3  | 4  | 5  | 6   | 7   | 8  | 9  |
 |------------------------|----|-----|----|----|----|----|-----|-----|----|----|
@@ -28,28 +26,24 @@ The accuracy aqired was 0.88
 #### Run Time
 The run time for the prediciton inlducing both training and testing was 5.5 seconds. 
 
-## Python Results
-#### Accuracy
-| Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
-|--------------|-------|-------|-------|--------|--------|
-| 1000         |  0.85 |  0.84 |  0.83 |   0.80 |   0.79 |
-| 2000         |  0.90 |  0.89 |  0.88 |   0.86 |   0.81 |
-| 3000         |  0.91 |  0.90 |  0.89 |   0.87 |   0.86 |
-| 4000         |  0.93 |  0.92 |  0.91 |   0.91 |   0.89 |
-#### Run Time [s]
-| Observations | K = 1 | K = 3 | K = 5 | K = 10 | K = 20 |
-|--------------|-------|-------|-------|--------|--------|
-| 1000         |  0.48 |  0.48 |  0.47 |   0.47 |   0.48 |
-| 2000         |  1.78 |  1.77 |  1.80 |   1.76 |   1.76 |
-| 3000         |  3.48 |  3.43 |  3.43 |   3.43 |   3.66 |
-| 4000         |  6.85 |  6.75 |  6.94 |   6.74 |   6.84 |
+## Results from R-KNN-hyper-opti
+The goal is to optimize the hyperparameters for the KNN algorithms. In the case of KNN the only hyperparameter is K.
+#### automatic hyperparameter tuning results
+k-Nearest Neighbors 
 
-## SAS Results
-#### Accuracy
-Missing
-#### Run Time [s]
-Missing
+500 samples
+784 predictors
+ 10 classes: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' 
 
-##  Results Conclusions
-From the table above the trend seems to be that the larger amount of observations used the higher the accuracy can be achieved. Furthermore it can be seen that for all the included amounts of observations the best accuracy is achieved by using smaller K-values in the 1 to 3 area.
+No pre-processing
+Resampling: Bootstrapped (25 reps) 
+Summary of sample sizes: 500, 500, 500, 500, 500, 500, ... 
+Resampling results across tuning parameters:
 
+  k  Accuracy   Kappa    
+  5  0.8057874  0.7826176
+  7  0.8085512  0.7857089
+  9  0.8007692  0.7768696
+
+Accuracy was used to select the optimal model using the largest value.
+The final value used for the model was k = 7.
