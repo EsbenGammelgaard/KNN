@@ -28,7 +28,7 @@ The run time for the prediciton inlducing both training and testing was 5.5 seco
 
 ## Results from R-KNN-hyper-opti
 The goal is to optimize the hyperparameters for the KNN algorithms. In the case of KNN the only hyperparameter is K.
-#### automatic hyperparameter tuning results
+### Automatic Hyperparameter Tuning Results
 k-Nearest Neighbors 
 
 500 samples
@@ -48,3 +48,31 @@ Resampling results across tuning parameters:
 
 Accuracy was used to select the optimal model using the largest value.
 The final value used for the model was k = 7.
+
+##### Comparing Test and Training Accuracy
+The training accuracy was 0.89 and the test accuracy was 0.78.
+
+### Manual Hyperparameter Grid Tuning
+k-Nearest Neighbors 
+
+500 samples
+784 predictors
+ 10 classes: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' 
+
+No pre-processing
+Resampling: Bootstrapped (25 reps) 
+Summary of sample sizes: 500, 500, 500, 500, 500, 500, ... 
+Resampling results across tuning parameters:
+
+  |k | Accuracy  |  Kappa    |
+  |--|-----------|-----------|
+  |1 | 0.8418971 | 0.8232437 |
+  |3 | 0.8161616 | 0.7944084 |
+  |5 | 0.8093891 | 0.7868045 |
+  |7 | 0.8047775 | 0.7816506 |
+
+Accuracy was used to select the optimal model using the largest value.
+The final value used for the model was k = 1.
+
+##### Comparing Test and Training Accuracy
+The training accuracy was 1.00 and the test accuracy was 0.82.
