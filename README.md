@@ -40,7 +40,8 @@ Resampling: Bootstrapped (25 reps)
 Summary of sample sizes: 500, 500, 500, 500, 500, 500, ... 
 Resampling results across tuning parameters:
 
-  |k | Accuracy  |  Kappa|    
+  |k | Accuracy  |  Kappa   |
+  |--|-----------|----------|
   |5 | 0.8057874 | 0.7826176|
   |7 | 0.8085512 | 0.7857089|
   |9 | 0.8007692 | 0.7768696|
