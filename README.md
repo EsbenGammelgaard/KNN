@@ -27,7 +27,7 @@ The accuracy aqired was 0.88
 The run time for the prediciton inlducing both training and testing was 5.5 seconds. 
 
 ## Results from R-KNN-hyper-opti
-The goal is to optimize the hyperparameters for the KNN algorithms. In the case of KNN the only hyperparameter is K.
+The goal is to optimize the hyperparameters for the KNN algorithm. In the case of KNN the only hyperparameter is K.
 ### Automatic Hyperparameter Tuning Results
 k-Nearest Neighbors 
 
